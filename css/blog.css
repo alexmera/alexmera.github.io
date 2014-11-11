@@ -5935,7 +5935,7 @@ footer p {
 }
 body {
   margin-top: 15px;
-  background-color: #ecf0f1;
+  background-color: #efefef;
 }
 .navbar-header .fullname {
   font-size: 30px;
@@ -5952,6 +5952,33 @@ body {
 }
 .dropdown-menu > li > a {
   font-weight: 300;
+}
+.home article {
+  border-top: 2px solid #e7e9ec;
+}
+.home article time {
+  line-height: 1;
+  font-size: 14px;
+  margin-top: 15px;
+}
+.home article time .day {
+  font-weight: 700;
+}
+.home article time .month {
+  text-transform: uppercase;
+  font-weight: 300;
+  padding-left: 2px;
+}
+.home article time .year {
+  text-align: center;
+  font-size: 20px;
+}
+.home article header,
+.home article p {
+  margin-left: 65px;
+}
+.home article:first-child {
+  border-top: none;
 }
 /*# sourceMappingURL=flat-ui.css.map */
 /* Solarized Light

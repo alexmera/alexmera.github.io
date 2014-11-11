@@ -45,7 +45,7 @@
 
 body {
   margin-top: floor((@line-height-computed / 2));
-  background-color: @clouds;
+  background-color: #efefef;
 }
 
 .navbar-header {
@@ -67,4 +67,35 @@ body {
 
 .dropdown-menu > li > a {
   font-weight: 300;
+}
+
+//HOME
+.home {
+  article {
+    border-top: 2px solid #e7e9ec;
+    time {
+      @time-base-size: 14px;
+      line-height: 1;
+      font-size: @time-base-size;
+      margin-top: (@line-height-computed / 2);
+      .day {
+        font-weight: 700;
+      }
+      .month {
+        text-transform: uppercase;
+        font-weight: 300;
+        padding-left: 2px;
+      }
+      .year {
+        text-align: center;
+        font-size: floor((@time-base-size * 1.45));
+      }
+    }
+    header, p {
+      margin-left: 65px;
+    }
+  }
+  article:first-child {
+    border-top: none;
+  }
 }
