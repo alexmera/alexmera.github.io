@@ -14,7 +14,7 @@ module.exports = function (grunt) {
 
         concat: {
             css: {
-                src: ['css/flat-ui.css', 'css/solarized-light.css'],
+                src: ['css/styles.css', 'css/solarized-light.css'],
                 dest: 'css/blog.css'
             }
         },
@@ -32,11 +32,11 @@ module.exports = function (grunt) {
                     strictMath: true,
                     sourceMap: true,
                     outputSourceFiles: true,
-                    sourceMapURL: 'flat-ui.css.map',
-                    sourceMapFilename: 'css/flat-ui.css.map'
+                    sourceMapURL: 'styles.css.map',
+                    sourceMapFilename: 'css/styles.css.map'
                 },
                 files: {
-                    'css/flat-ui.css': '_less/flat-ui.less'
+                    'css/styles.css': '_less/styles.less'
                 }
             }
         },

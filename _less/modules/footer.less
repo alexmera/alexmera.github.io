@@ -3,10 +3,11 @@
 // --------------------------------------------------
 
 footer {
-  background-color: mix(@brand-primary, @inverse, 9%);
-  color: mix(@brand-primary, @inverse, 34%);
+  background-color: @midnight-blue;
+  color: mix(@midnight-blue, @inverse, 34%);
   font-size: 15px;
   padding: 0;
+  margin-top: @line-height-computed;
 
   a {
     color: mix(@brand-primary, @inverse, 50%);
@@ -16,6 +17,11 @@ footer {
     font-size: 15px;
     line-height: 20px;
     margin-bottom: 10px;
+  }
+
+  h6 {
+    color: mix(@midnight-blue, @inverse, 40%);
+    font-weight: 300;
   }
 }
 
@@ -38,11 +44,12 @@ footer {
 
 // Footer banner
 .footer-banner {
-  background-color: @brand-secondary;
-  color: mix(@brand-secondary, @inverse, 20%);
+  text-align: right;
+  background-color: @pomegranate;
+  color: mix(@pomegranate, @inverse, 20%);
   margin-left: 42px;
-  min-height: 316px;
-  padding: 0 30px 30px;
+  min-height: 120px;
+  padding: 30px 30px;
 
   .footer-title {
     color: @inverse;

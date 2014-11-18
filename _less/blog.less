@@ -1,0 +1,35 @@
+.blog {
+  article {
+    .clearfix;
+    border-top: 1px solid @silver;
+    time {
+      .pull-left;
+      color: @brand-primary;
+      @time-base-size: 14px;
+      line-height: 1;
+      font-size: @time-base-size;
+      margin-top: (@line-height-computed / 2);
+      .day {
+        font-weight: 700;
+      }
+      .month {
+        text-transform: uppercase;
+        font-weight: 300;
+        padding-left: 2px;
+      }
+      .year {
+        text-align: center;
+        font-size: floor((@time-base-size * 1.45));
+      }
+    }
+    header, p {
+      margin-left: 65px;
+    }
+    header a {
+      color: @headings-color;
+    }
+  }
+  article:first-child {
+    border-top: none;
+  }
+}

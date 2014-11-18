@@ -1,0 +1,6 @@
+{
+  "name": "alexmera-blog",
+  "dependencies": {
+    "bootstrap": "~3.3.1"
+  }
+}
