@@ -23,4 +23,4 @@ asciidoctor:
     - pygments-css=style
 
 #Exclude
-exclude: [README.markdown, package.json, grunt.js, Gruntfile.js, Gruntfile.coffee, node_modules]
+exclude: [README.markdown, package.json, grunt.js, Gruntfile.js, Gruntfile.coffee, node_modules, bower_components, bower.json]
