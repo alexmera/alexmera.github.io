@@ -3,7 +3,5 @@
 _site
 node_modules
 bower_components
-css/blog.css
-css/blog.min.css
 css/styles.css
 css/styles.css.map
