@@ -1,0 +1,34 @@
+- label: Java
+  short: Java
+  link: /es/java
+  slug: java
+  lang: es
+  parent: none
+
+- label: Spring Framework
+  short: Spring
+  link: /es/java/spring-framework
+  slug: spring-framework
+  lang: es
+  parent: java
+
+- label: Programación Funcional
+  short: Prog. Funcional
+  link: /es/programacion-funcional
+  slug: programacion-funcional
+  lang: es
+  parent: none
+
+- label: Scala
+  short: Scala
+  link: /es/programacion-funcional/scala
+  slug: scala
+  lang: es
+  parent: programacion-funcional
+
+- label: Guías Prácticas
+  short: Guías
+  link: /es/guias-practicas
+  slug: guias-practicas
+  lang: es
+  parent: none

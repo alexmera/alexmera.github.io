@@ -4,14 +4,14 @@
 
 footer {
   background-color: @midnight-blue;
-  color: mix(@midnight-blue, @inverse, 34%);
+  color: mix(@midnight-blue, @inverse, 50%);
   font-size: 15px;
   padding: 0;
   margin-top: @line-height-computed;
 
   a {
-    color: mix(@brand-primary, @inverse, 50%);
-    font-weight: 700;
+    color: mix(@midnight-blue, @inverse, 50%);
+    font-weight: 400;
   }
   p {
     font-size: 15px;
@@ -20,9 +20,40 @@ footer {
   }
 
   h6 {
-    color: mix(@midnight-blue, @inverse, 40%);
+    margin-top: 15px;
+    color: @green-sea;
     font-weight: 300;
+    text-transform: uppercase;
+    .ico {
+      font-size: @font-size-base;
+    }
   }
+
+  .col {
+    ul {
+      list-style-type: none;
+      margin: 0 0 26px;
+      padding: 0;
+
+      li {
+        border-top: 1px solid lighten(@midnight-blue, 7%);
+        line-height: 19px;
+        padding: 6px 0;
+
+        &:first-child {
+          border-top: none;
+          padding-top: 1px;
+        }
+
+        .ico {
+          color: lighten(@midnight-blue, 7%);
+          font-size: 12px;
+          margin-right: 3px;
+        }
+      }
+    }
+  }
+
 }
 
 .footer-title {

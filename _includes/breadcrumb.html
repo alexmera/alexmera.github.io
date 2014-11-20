@@ -1,0 +1,12 @@
+{% comment %}
+        //TODO Implement for english, add where
+{% endcomment %}
+<ol class="hidden-xs breadcrumb">
+    <li><a href="/">Inicio</a></li>
+    {% for cat in page.categories %}
+    {% assign catInfo = {{site.data.categories | where:"slug", cat }} %}
+    {% if catInfo != empty %}
+    <li><a href="{{ catInfo[0].link }}">{{ catInfo[0].label }}</a></li>
+    {% endif %}
+    {% endfor %}
+</ol>

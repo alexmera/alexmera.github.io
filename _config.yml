@@ -1,10 +1,9 @@
 # Site settings
-title: ALEXMERA
+title: Alexander Mera - Blog sobre desarrollo de software java, scala, progfun
 email: alxmera@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Guías, explicaciones, ejemplos y opiniones relacionados con el
+  desarrollo de software: java, spring framework, programación funcional y scala
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://yourdomain.com" # the base hostname & protocol for your site
 twitter_username: alexmera
@@ -13,14 +12,10 @@ github_username:  alexmera
 # Build settings
 markdown: kramdown
 
-# Asciidoctor
-asciidoc_ext: asciidoc,adoc,ad
-
-asciidoctor:
-  attributes:
-    - hardbreaks!
-    - source-highlighter=pygments
-    - pygments-css=style
+# Outputting
+permalink:     pretty
+paginate_path: /page:num
+timezone:      America/Bogota
 
 #Exclude
-exclude: [README.markdown, package.json, grunt.js, Gruntfile.js, Gruntfile.coffee, node_modules, bower_components, bower.json]
+exclude: [README.md, package.json, grunt.js, Gruntfile.js, Gruntfile.coffee, node_modules, bower_components, bower.json]

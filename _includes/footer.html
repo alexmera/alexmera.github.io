@@ -1,24 +1,22 @@
 <footer>
     <div class="container">
         <div class="row">
-            <div class="col-md-4">
-                <h6>Temas <span class="fui-arrow-right"></span></h6>
+            <div class="col-md-4 col">
+                <h6>Categorías <span class="fui-arrow-right ico"></span></h6>
                 <ul>
-                    <li>Java</li>
-                    <li>Spring Framework</li>
-                    <li>Programación Funcional</li>
-                    <li>Scala</li>
+                    {% for cat in site.data.categories %}
+                    <li><span class="fui-radio-unchecked ico"></span> <a href="{{ cat.link }}">{{ cat.label }}</a></li>
+                    {% endfor %}
                 </ul>
             </div>
             <!-- /col-md-4 -->
 
-            <div class="col-md-3">
-                <h6>Hecho con <span class="fui-arrow-right"></span></h6>
+            <div class="col-md-3 col">
+                <h6>Hecho con <span class="fui-arrow-right ico"></span></h6>
                 <ul>
-                    <li>Jekyll</li>
-                    <li>Bootstrap</li>
-                    <li>Flat UI Kit</li>
-                    <li>GitHub Pages (Hosting)</li>
+                    {% for item in site.data.builtwith %}
+                    <li><span class="fui-radio-unchecked ico"></span> <a target="_blank" href="{{ item.link }}">{{ item.label }}</a></li>
+                    {% endfor %}
                 </ul>
             </div>
             <!-- /col-md-3 -->

@@ -1,3 +1,4 @@
+{% assign rootCategories = {{site.data.categories | where:"parent","none" }} %}
 <header>
     <div class="container">
         <nav class="navbar navbar-inverse navbar-embossed" role="navigation">
@@ -13,29 +14,27 @@
             </div>
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="#">INICIO</a></li>
-                    <li><a href="#about">ABOUT</a></li>
-                    <li><a href="#contact">CONTACT</a></li>
+                    {% for mainCat in  rootCategories %}
 
-                    <!-- Pages -->
-                    {% for page in site.pages %}
-                    {% if page.title %}
-                    <li><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
+                    {% assign activeClass = "" %}
+                    {% if page.categories contains mainCat.slug %} {% assign activeClass = "active" %} {% endif %}
+
+                    {% assign childCategories = {{site.data.categories | where:"parent",mainCat.slug }} %}
+                    {% if childCategories != empty %}
+                        <li class="dropdown {{ activeClass }}">
+                            <a href="{{ mainCat.link }}" title="{{ mainCat.label }}" class="dropdown-toggle" data-toggle="dropdown">{{ mainCat.short }} <span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                {% for child in  childCategories %}
+                                <li><a href="{{ child.link }}">{{ child.label }}</a></li>
+                                {% endfor %}
+                            </ul>
+                        </li>
+                    {% else %}
+                        <li class="{{ activeClass }}" ><a href="{{ mainCat.link }}" title="{{ mainCat.label }}">{{ mainCat.short }}</a></li>
                     {% endif %}
+
                     {% endfor %}
 
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></a>
-                        <ul class="dropdown-menu" role="menu">
-                            <li><a href="#">Action</a></li>
-                            <li><a href="#">Another action</a></li>
-                            <li><a href="#">Something else here</a></li>
-                            <li class="divider"></li>
-                            <li class="dropdown-header">Nav header</li>
-                            <li><a href="#">Separated link</a></li>
-                            <li><a href="#">One more separated link</a></li>
-                        </ul>
-                    </li>
                 </ul>
             </div>
             <!--/.nav-collapse -->
