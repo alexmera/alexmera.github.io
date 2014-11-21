@@ -13220,6 +13220,55 @@ footer .social a {
 .blog article:first-child {
   border-top: none;
 }
+.blog-post h1 {
+  margin-top: 12.5px;
+}
+.blog-post .post-meta {
+  color: #95a5a6;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.blog-post .post-meta:before,
+.blog-post .post-meta:after {
+  content: " ";
+  display: table;
+}
+.blog-post .post-meta:after {
+  clear: both;
+}
+.blog-post .post-meta:before,
+.blog-post .post-meta:after {
+  content: " ";
+  display: table;
+}
+.blog-post .post-meta:after {
+  clear: both;
+}
+.blog-post .post-meta:before,
+.blog-post .post-meta:after {
+  content: " ";
+  display: table;
+}
+.blog-post .post-meta:after {
+  clear: both;
+}
+.blog-post .post-meta:before,
+.blog-post .post-meta:after {
+  content: " ";
+  display: table;
+}
+.blog-post .post-meta:after {
+  clear: both;
+}
+.blog-post .post-meta time {
+  float: left !important;
+}
+.blog-post .post-meta .tags {
+  float: left !important;
+  font-size: 14px;
+  margin: 0 0 0 10px;
+}
 body {
   margin-top: 12px;
   background-color: #ecf0f1;

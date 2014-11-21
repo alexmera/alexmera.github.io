@@ -24,6 +24,7 @@
                         <li class="dropdown {{ activeClass }}">
                             <a href="{{ mainCat.link }}" title="{{ mainCat.label }}" class="dropdown-toggle" data-toggle="dropdown">{{ mainCat.short }} <span class="caret"></span></a>
                             <ul class="dropdown-menu" role="menu">
+                                <li><a href="{{ mainCat.link }}">{{ mainCat.label }}</a></li>
                                 {% for child in  childCategories %}
                                 <li><a href="{{ child.link }}">{{ child.label }}</a></li>
                                 {% endfor %}

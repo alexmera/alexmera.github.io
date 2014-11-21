@@ -1,0 +1,22 @@
+{% assign posts = null %}
+{% assign category = include.category %}
+
+{% if category == 'all' %}
+    {% assign posts = site.posts %}
+{% else %}
+    {% assign posts = site.categories[category] %}
+{% endif %}
+<main role="main" class="{{ page.mainClasses }}">
+    {% for post in posts %}
+    <article>
+        <time datetime="{{ post.date | date: '%F' }}">
+            <div><span class="day">{{ post.date | date: '%d' }}</span><span class="month">{{ post.date | date: '%b' }}</span></div>
+            <div class="year">{{ post.date | date: '%Y' }}</div>
+        </time>
+        <header>
+            <h3><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
+        </header>
+        {{ post.excerpt }}
+    </article>
+    {% endfor %}
+</main>
