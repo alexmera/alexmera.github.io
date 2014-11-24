@@ -1,16 +1,18 @@
 ---
 layout: default
 ---
-{% include breadcrumb.html %}
+{% include breadcrumb.html blogpost=true %}
 
 <main role="main" class="blog-post">
     <article>
         <header>
             <div class="post-meta">
                 <time datetime="{{ page.date | date: '%F' }}"><span class="fui-calendar ico"></span> <span class="date">{{ page.date | date: '%d/%m/%Y' }}</span></time>
+                {% if page.tags != empty %}
                 <p class="tags">
-                    <span class="fui-tag ico"></span> java &middot; spring &middot; gradle &middot; osx
+                    <span class="fui-tag ico"></span> {{ page.tags | join:" &middot; " }}
                 </p>
+                {% endif %}
             </div>
             <h1 class="post-title">{{ page.title }}</h1>
         </header>

@@ -32,9 +32,10 @@ h6 {
   margin-bottom: (@line-height-computed / 2);
 }
 
-h6 {
-  font-weight: normal;
+h1 {
+  font-weight: 700;
 }
+
 
 h1, .h1 { font-size: @font-size-h1; } // ~62px
 h2, .h2 { font-size: @font-size-h2; } // ~52px
@@ -176,11 +177,12 @@ blockquote {
   border-left: 3px solid @blockquote-border-color;
   padding: 0 0 0 16px;
   margin: 0 0 @line-height-computed;
+  color: @asbestos;
 
   p {
     font-size: ceil((@font-size-base * 1.111)); // ~20px
     line-height: 1.55;                        // ~31px
-    font-weight: normal;
+    font-weight: 300;
     margin-bottom: .4em;
   }
   small,

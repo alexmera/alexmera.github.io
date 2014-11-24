@@ -1,10 +1,15 @@
 {% assign posts = null %}
-{% assign category = include.category %}
+{% assign categories = page.categories %}
+{% assign category = categories | last %}
 
 {% if category == 'all' %}
     {% assign posts = site.posts %}
 {% else %}
     {% assign posts = site.categories[category] %}
+{% endif %}
+
+{% if category != 'all' %}
+    {% include breadcrumb.html blogpost=false %}
 {% endif %}
 <main role="main" class="{{ page.mainClasses }}">
     {% for post in posts %}

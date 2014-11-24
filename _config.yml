@@ -19,3 +19,7 @@ timezone:      America/Bogota
 
 #Exclude
 exclude: [README.md, package.json, grunt.js, Gruntfile.js, Gruntfile.coffee, node_modules, bower_components, bower.json]
+
+# Markdown Processors
+kramdown:
+    input: GFM

@@ -1301,7 +1301,7 @@ blockquote {
   padding: 12.5px 25px;
   margin: 0 0 25px;
   font-size: 22.5px;
-  border-left: 5px solid #e7e9ec;
+  border-left: 5px solid #d6dbdf;
 }
 blockquote p:last-child,
 blockquote ul:last-child,
@@ -1325,7 +1325,7 @@ blockquote .small:before {
 blockquote.pull-right {
   padding-right: 15px;
   padding-left: 0;
-  border-right: 5px solid #e7e9ec;
+  border-right: 5px solid #d6dbdf;
   border-left: 0;
   text-align: right;
 }
@@ -7217,8 +7217,8 @@ h6 {
   margin-top: 12.5px;
   margin-bottom: 12.5px;
 }
-h6 {
-  font-weight: normal;
+h1 {
+  font-weight: 700;
 }
 h1,
 .h1 {
@@ -7391,14 +7391,15 @@ abbr[data-original-title] {
   border-bottom: 1px dotted #bdc3c7;
 }
 blockquote {
-  border-left: 3px solid #e7e9ec;
+  border-left: 3px solid #d6dbdf;
   padding: 0 0 0 16px;
   margin: 0 0 25px;
+  color: #7f8c8d;
 }
 blockquote p {
   font-size: 20px;
   line-height: 1.55;
-  font-weight: normal;
+  font-weight: 300;
   margin-bottom: .4em;
 }
 blockquote small,
@@ -7415,7 +7416,7 @@ blockquote .small:before {
 blockquote.pull-right {
   padding-right: 16px;
   padding-left: 0;
-  border-right: 3px solid #e7e9ec;
+  border-right: 3px solid #d6dbdf;
   border-left: 0;
 }
 blockquote.pull-right small:after {
@@ -13152,6 +13153,17 @@ footer .social a {
   text-decoration: none;
   color: #f2d7d5;
 }
+.breadcrumb {
+  font-size: 14px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+.breadcrumb li:last-child {
+  font-weight: 400;
+}
+.breadcrumb.blogpost li:last-child {
+  font-weight: 300;
+}
 .blog article {
   border-top: 1px solid #bdc3c7;
 }
@@ -13268,6 +13280,18 @@ footer .social a {
   float: left !important;
   font-size: 14px;
   margin: 0 0 0 10px;
+}
+.blog-post .footnotes {
+  font-size: 14px;
+  font-weight: 300;
+  padding-top: 12.5px;
+  margin-top: 25px;
+  border-top: 1px solid #bdc3c7;
+}
+.blog-post .footnotes ol li p {
+  font-size: 16px;
+  font-weight: 300;
+  margin-bottom: 0;
 }
 body {
   margin-top: 12px;
