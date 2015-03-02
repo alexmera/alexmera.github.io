@@ -2,7 +2,9 @@
 layout: post
 title:  "Welcome to Jekyll!"
 tags:   java spring gradle osx
-date:   2014-11-07 12:14:29
+#date:   2014-11-07 12:14:29
+categories: java spring-framework
+mathjax: true
 ---
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 
@@ -44,6 +46,29 @@ function test() {
 That's it, now you can use GFM and footnotes[^1] in your Jekyll MarkDown posts!.
 
 That's it, now you can use GFM and footnotes[^2] in your Jekyll MarkDown posts!.
+
+When $a \ne 0$, there are two solutions to \(ax^2 + bx + c = 0\) and they are $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
+
+### Esta es una ecuación
+
+Ecuación **in-line:** $$ f\left( x \right) =x+y $$
+
+$$
+\begin{align*}
+  & \phi(x,y) = \phi \left(\sum_{i=1}^n x_ie_i, \sum_{j=1}^n y_je_j \right)
+  = \sum_{i=1}^n \sum_{j=1}^n x_i y_j \phi(e_i, e_j) = \\
+  & (x_1, \ldots, x_n) \left( \begin{array}{ccc}
+      \phi(e_1, e_1) & \cdots & \phi(e_1, e_n) \\
+      \vdots & \ddots & \vdots \\
+      \phi(e_n, e_1) & \cdots & \phi(e_n, e_n)
+    \end{array} \right)
+  \left( \begin{array}{c}
+      y_1 \\
+      \vdots \\
+      y_n
+    \end{array} \right)
+\end{align*}
+$$
 
 [^1]: Example footnote.
 [^2]: Example footnote.
