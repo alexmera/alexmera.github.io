@@ -25,7 +25,7 @@ Hasta aquí esta definición no nos aporta nada nuevo, pero nos permite descompo
 Una función tiene un efecto secundario sí hace algo **adicional** a simplemente entregar (retornar) su resultado, por ejemplo:
 
 - Modificar una variable.
-- Asignar una campo en un objeto.
+- Asignar un campo en un objeto.
 - Lanzar una excepción o finalizar con un error.
 - Escribir en la consola o leer entradas del usuario.
 - Leer o escribir en un archivo.
