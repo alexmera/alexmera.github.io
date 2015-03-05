@@ -21,7 +21,7 @@
         <header>
             <h3><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
         </header>
-        {{ post.excerpt }}
+        <p>{{ post.description }}</p>
     </article>
     {% endfor %}
 </main>

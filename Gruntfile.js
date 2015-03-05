@@ -14,7 +14,7 @@ module.exports = function (grunt) {
 
         concat: {
             css: {
-                src: ['css/styles.css', 'css/solarized-light.css'],
+                src: ['css/styles.css', 'css/monokai.css'],
                 dest: 'css/blog.css'
             }
         },
