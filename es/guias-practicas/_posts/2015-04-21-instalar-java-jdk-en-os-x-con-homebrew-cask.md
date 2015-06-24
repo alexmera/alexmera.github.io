@@ -81,4 +81,5 @@ drwxr-xr-x  3 root  wheel  102 Apr 20 18:27 jdk1.8.0_45.jdk
 
 ## Cambiar entre las versiones de Java
 
-En una próxima entrada revisaremos una manera práctica y eficiente de gestionar varias versiones de Java en OS X. Por ahora, los remito a [este artículo](http://www.mkyong.com/java/how-to-set-java_home-environment-variable-on-mac-os-x/) donde se explica como asignar la variable de entorno `$JAVA_HOME` utilizando la herramienta de OS X `/usr/libexec/java_home`.
+En la entrada [Gestionar múltiples versiones de Java en OS X con jEnv]({% post_url 2015-06-23-multiples-versiones-java-osx-jenv %}) revisaremos una manera práctica y eficiente de gestionar varias versiones de Java en OS X.
+

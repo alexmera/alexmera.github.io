@@ -13,6 +13,7 @@ Debo admitir que es un tema desafiante, pero no por su naturaleza —la cual es 
 
 Mi intención al escribir esta entrada —y probablemente muchas más— es compartir los conocimientos adquiridos sobre el tema durante mi proceso de aprendizaje y espero poder hacerlo de una manera clara y amena —lo puedo intentar ¿no?—. Así que manos a la obra.
 
+<img src="/img/fx.png" class="img-responsive center-block" alt="fx" />
 
 ## ¿Qué es la programación funcional?
 
